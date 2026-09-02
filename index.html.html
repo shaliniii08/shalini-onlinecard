@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shalini Singh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#17151f;
+    --front-a:#211d38;
+    --front-b:#171331;
+    --gold:#c9a227;
+    --gold-soft:#e3c766;
+    --paper:#f5f3ee;
+    --paper-line:#ddd8ca;
+    --muted:#a9a6c4;
+    --muted-dark:#6b6784;
+    --body-text:#3a3750;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--body-text);
+    font-family:'Inter', sans-serif;
+    line-height:1.6;
+  }
+  .hero{
+    background:linear-gradient(155deg, var(--front-a), var(--front-b));
+    color:#f4f2ea;
+    padding:64px 24px 56px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero svg.net{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    opacity:0.3;
+  }
+  .hero-inner{
+    max-width:640px;
+    margin:0 auto;
+    position:relative;
+    z-index:1;
+  }
+  .eyebrow{
+    font-size:12px;
+    letter-spacing:0.04em;
+    color:var(--gold-soft);
+    margin:0 0 10px 0;
+  }
+  h1{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:44px;
+    line-height:1.1;
+    margin:0 0 16px 0;
+  }
+  .tagline{
+    font-size:16px;
+    color:var(--muted);
+    max-width:420px;
+    margin:0;
+  }
+  main{
+    max-width:640px;
+    margin:0 auto;
+    padding:48px 24px 80px;
+  }
+  section{
+    margin-bottom:48px;
+  }
+  h2{
+    font-family:'Fraunces', serif;
+    font-weight:500;
+    font-size:22px;
+    color:var(--ink);
+    margin:0 0 20px 0;
+    padding-bottom:12px;
+    border-bottom:1px solid var(--paper-line);
+  }
+  .entry{
+    margin-bottom:22px;
+  }
+  .entry:last-child{ margin-bottom:0; }
+  .entry-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:4px 12px;
+  }
+  .entry-title{
+    font-weight:600;
+    color:var(--ink);
+    font-size:15px;
+  }
+  .entry-meta{
+    font-size:13px;
+    color:var(--muted-dark);
+  }
+  .entry-desc{
+    font-size:14px;
+    margin-top:6px;
+    color:var(--body-text);
+    max-width:520px;
+  }
+  .stack{
+    font-size:12px;
+    color:var(--muted-dark);
+    margin-top:6px;
+  }
+  .cert-list{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .cert-item{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+    font-size:14px;
+  }
+  .cert-item .dot{
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:var(--gold);
+    flex-shrink:0;
+  }
+  .skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .skill-chip{
+    font-size:12px;
+    border:1px solid var(--paper-line);
+    color:var(--body-text);
+    padding:6px 12px;
+    border-radius:999px;
+  }
+  .contact-card{
+    background:#fff;
+    border:1px solid var(--paper-line);
+    border-radius:14px;
+    padding:24px;
+  }
+  .contact-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 0;
+    border-bottom:1px solid var(--paper-line);
+    font-size:14px;
+  }
+  .contact-row:last-child{ border-bottom:none; }
+  .contact-row a{
+    color:var(--ink);
+    text-decoration:none;
+    border-bottom:1px solid var(--gold);
+  }
+  .save-btn{
+    margin-top:18px;
+    width:100%;
+    background:var(--front-a);
+    color:#f4f2ea;
+    border:none;
+    padding:13px;
+    border-radius:10px;
+    font-family:'Inter', sans-serif;
+    font-size:14px;
+    cursor:pointer;
+  }
+  footer{
+    text-align:center;
+    font-size:12px;
+    color:var(--muted-dark);
+    padding-bottom:40px;
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <svg class="net" viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#c9a227" stroke-width="0.6" opacity="0.5">
+      <line x1="60" y1="40" x2="200" y2="90"/>
+      <line x1="200" y1="90" x2="380" y2="50"/>
+      <line x1="200" y1="90" x2="140" y2="180"/>
+      <line x1="200" y1="90" x2="340" y2="170"/>
+      <line x1="380" y1="50" x2="520" y2="100"/>
+      <line x1="340" y1="170" x2="480" y2="200"/>
+      <line x1="140" y1="180" x2="60" y2="230"/>
+    </g>
+    <g fill="#e3c766">
+      <circle cx="60" cy="40" r="2.4"/>
+      <circle cx="200" cy="90" r="2.8"/>
+      <circle cx="380" cy="50" r="2.4"/>
+      <circle cx="140" cy="180" r="2.4"/>
+      <circle cx="340" cy="170" r="2.4"/>
+      <circle cx="520" cy="100" r="2.2"/>
+      <circle cx="480" cy="200" r="2.2"/>
+      <circle cx="60" cy="230" r="2.2"/>
+    </g>
+  </svg>
+  <div class="hero-inner">
+    <p class="eyebrow">Computer Science &amp; Engineering — AI/ML</p>
+    <h1>Shalini Singh</h1>
+    <p class="tagline">Third-year student specializing in AI/ML, building at the intersection of machine learning and applied engineering.</p>
+  </div>
+</div>
+
+<main>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">B.Tech, Computer Science &amp; Engineering (AI/ML)</span>
+        <span class="entry-meta">2024 – 2028</span>
+      </div>
+      <div class="entry-desc">IILM University, Greater Noida</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">AI/ML Intern, Makers Lab (R&amp;D)</span>
+        <span class="entry-meta">Tech Mahindra</span>
+      </div>
+      <div class="entry-desc">Worked on LLM fundamentals, agentic RAG pipelines, and data workflows.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Omni / FireGuard</span>
+      </div>
+      <div class="entry-desc">A centralized fire safety and management system, built on a manually created, simulated dataset feeding into a frontend built via a vibe-coding app.</div>
+      <div class="stack">Python · Flask · PostgreSQL · HTML/CSS/JS · Chart.js</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Secure File Storage System</span>
+      </div>
+      <div class="entry-desc">A secure file storage system built on AWS S3 and IAM. An IEEE-format paper on the project was submitted to an academic conference.</div>
+      <div class="stack">Flask · PostgreSQL · AWS S3 · IAM · Boto3</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">AI-Powered Defence Intelligence &amp; Threat Analysis Platform</span>
+        <span class="entry-meta">Final-year project, in progress</span>
+      </div>
+      <div class="entry-desc">Scoped to OSINT text classification and simulated anomaly detection using open, public data.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="cert-list">
+      <div class="cert-item"><span class="dot"></span>AWS Academy Generative AI Foundations</div>
+      <div class="cert-item"><span class="dot"></span>NPTEL Cloud Computing</div>
+      <div class="cert-item"><span class="dot"></span>Google Generative AI badge</div>
+      <div class="cert-item"><span class="dot"></span>AWS Cloud Foundations</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="skill-chip">Python</span>
+      <span class="skill-chip">Flask</span>
+      <span class="skill-chip">PostgreSQL</span>
+      <span class="skill-chip">AWS (S3, IAM, Boto3)</span>
+      <span class="skill-chip">LLM fundamentals</span>
+      <span class="skill-chip">Agentic RAG pipelines</span>
+      <span class="skill-chip">Data workflows</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <div class="contact-row"><span>Phone</span><a href="tel:+917042627250">+91 70426 27250</a></div>
+      <div class="contact-row"><span>Email</span><a href="mailto:shalinisinghin7@gmail.com">shalinisinghin7@gmail.com</a></div>
+      <div class="contact-row"><span>LinkedIn</span><a href="https://www.linkedin.com/in/inshalinisingh/" target="_blank">in/inshalinisingh</a></div>
+      <div class="contact-row"><span>GitHub</span><a href="https://github.com/shaliniii08" target="_blank">shaliniii08</a></div>
+      <button class="save-btn" id="saveBtn">Save to contacts</button>
+    </div>
+  </section>
+
+</main>
+
+<footer>Shalini Singh · IILM University</footer>
+
+<script>
+  document.getElementById("saveBtn").addEventListener("click", function(){
+    const vcard = [
+      "BEGIN:VCARD",
+      "VERSION:3.0",
+      "N:Singh;Shalini;;;",
+      "FN:Shalini Singh",
+      "ORG:IILM University",
+      "TITLE:B.Tech CSE (AI/ML) Student",
+      "TEL;TYPE=CELL:+917042627250",
+      "EMAIL:shalinisinghin7@gmail.com",
+      "URL:https://www.linkedin.com/in/inshalinisingh/",
+      "URL:https://github.com/shaliniii08",
+      "END:VCARD"
+    ].join("\n");
+    const blob = new Blob([vcard], {type:"text/vcard"});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "shalini-singh.vcf";
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+</script>
+
+</body>
+</html>
